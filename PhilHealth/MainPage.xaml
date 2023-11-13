@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhilHealth.MainPage"
+             xmlns:viewModels="clr-namespace:PhilHealth.ViewModels"
+             x:DataType="viewModels:MainPageViewModel"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <WebView Source="https://memberinquiry.philhealth.gov.ph/member/login.xhtml"
+                 x:Name="PhilHealthSite"
+                 IsVisible="false"
+                 Navigating="PhilHealthSite_Navigating"
+                 Navigated="PhilHealthSite_Navigated">
+        </WebView>
+    </Grid>
+
+
+</ContentPage>
